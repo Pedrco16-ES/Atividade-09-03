@@ -103,11 +103,11 @@ class PedidoService {
 
 const service = new PedidoService();
 
-const pedido1 = new Pedido("ELETRONICO", 1000, 2, "ana@email.com");
+const pedido1 = new Pedido("ELETRONICO", 1000, 2, "email da pessoa");
 service.processarPedido(pedido1, new ImpostoEletronico(), new PagamentoCartao());
 
-const pedido2 = new Pedido("ALIMENTO", 50, 3, "joao@email.com");
+const pedido2 = new Pedido("ALIMENTO", 50, 3, "email da pessoa");
 service.processarPedido(pedido2, new ImpostoAlimento(), new PagamentoPix());
 
-const pedido3 = new Pedido("VESTUARIO", 200, 1, "maria@email.com");
+const pedido3 = new Pedido("VESTUARIO", 200, 1, "email da pessoa");
 service.processarPedido(pedido3, new ImpostoVestuario(), new PagamentoBoleto());
